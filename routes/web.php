@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Users;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 // Route::get('/remote-users', [Users::class, 'index'])->name('remote-users.index');
 Route::get('/api/remote-users', [Users::class, 'index']);
+
